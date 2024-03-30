@@ -1,1 +1,202 @@
 @charset "utf-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+body {
+    font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+}
+
+/* heiper --------------------------------------------------------------- */
+
+.container {
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* header --------------------------------------------------------------- */
+
+.header {
+   /* background-color: pink; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed;
+   z-index: 10;
+   width: 100%;
+}
+
+.header-foot, .header-btn-times {
+    display: none;
+}
+
+.header-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-head, .header-body, .header-foot {
+    padding: .5rem 1rem;
+    box-sizing: border-box;
+}
+
+.header-head {
+    /* background-color: aquamarine; */
+    width: 80px;
+}
+
+.header-ul {
+    display: flex;
+    background-color: rgba(0, 0, 0, .7);
+    padding: .5rem 1rem;
+    border-radius: 30px;
+}
+
+.header-li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.header-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 600;
+    transition-duration: .3s;
+}
+
+.header-link:hover {
+    color: #cf7688;
+}
+
+
+
+/* banner -------------------------------------------------------------------- */
+
+.banner {
+    color: #fff;
+    background-image: linear-gradient(135deg,#dfa5b1 20%,#84e2ff 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+}
+
+.banner-head, .banner-body {
+    width: 50%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.banner-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.banner-small {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: .5rem;
+    display: block;
+}
+
+.banner-subTitle {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .7);
+}
+
+.banner-desc {
+    line-height: 1.6;
+}
+
+.banner-ul {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    color: rgba(255, 255, 255, .3);
+}
+
+.banner-ul-order1 { order: -1;}
+
+.banner-index .banner-head,
+.banner-index .banner-body {
+    padding-top: 3rem;
+}
+
+
+.banner-index .banner-head {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.banner-index .banner-body {
+    position: relative;
+    width: 60%;
+}
+
+
+.banner-li + .banner-li {
+    margin-left: 1rem;
+}
+
+.banner-btns {
+    margin-top: 2rem;
+}
+
+.banner-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: solid 2px #fff;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    transition-duration: .3s;
+    display: inline-block;
+}
+
+.banner-btn:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-img-mobile, .banner-img-pad {
+    position: absolute;
+}
+
+.banner-img-mobile {
+    left: 0;
+    bottom: 5rem;
+}
+
+.banner-img-pad {
+    right: 1rem;
+    bottom: -2rem;
+}
+
+.banner-img-desktop {
+    margin-left: 4.5rem;
+}
+
