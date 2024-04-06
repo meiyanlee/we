@@ -5,6 +5,11 @@
     padding-bottom: 5rem;
 }
 
+/* .base-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+} */
+
 .base-body {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -33,4 +38,182 @@
 
 .base-btn:hover {
     background-color: #f6cdd5;
+}
+
+
+
+/* service--------------------------------------------------------- */
+
+.service-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 33.33333%;
+    border: solid 1px #e6e6e6;
+    box-sizing: border-box;
+    padding: 1.5rem 2rem;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    color: rgba(0, 0, 0, .7);
+}
+
+.service-title, .service-icons {
+    text-align: center;
+}
+
+.service-title {
+    font-size: 1.25rem;
+}
+
+.service-desc {
+    font-size: .95rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.service-icons {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.service-icons .fas {
+    color: #cf7688;
+}
+
+
+
+/* project--------------------------------------------------------- */
+
+.base-project {
+    background-image: linear-gradient(#f6f6f6 0, #fff 50%);
+}
+
+.project-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    width: 20%;
+    /* border: solid 1px #cf7688; */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.project-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* intro------------------------------------------------------------- */
+
+.base-intro {
+    background-image: url(../images/intro-bg.jpg);
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 10%, 100% 85%, 0 100%);
+    position: relative;
+}
+
+.base-intro::before {
+    content: "";
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+}
+
+.intro-desc {
+    color: #fff;
+    line-height: 1.7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.base-intro .base-head, .base-intro .base-foot {
+    text-align: left;
+}
+
+.base-intro .base-title {
+    letter-spacing: 0;
+}
+
+.base-intro .base-title-small, .base-intro .base-title-primary {
+    display: block;
+}
+
+.base-intro .base-title-small {
+    color: #ddd;
+    font-size: 2.5rem;
+}
+
+.base-intro .base-btn {
+    color: #fff;
+    border-color: #ffff;
+}
+
+.base-intro .base-btn:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.base-intro .base-title-primary {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-top: .5rem;
+}
+
+
+/* build------------------------------------------------------------- */
+
+.base-build .base-body {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.build-li {
+    background-color: #ddd;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    color: rgba(255, 255, 255, .9);
+    /* clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); */
+    transform: skew(-15deg);
+    border-radius: 5px;
+}
+
+.build-li + .build-li {
+    margin-top: 2rem;
+}
+
+.build-content {
+    transform: skew(15deg);
+}
+
+.build-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.build-desc {
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.build-li-1 {
+    background-color: #e7c0c8;
+}
+
+.build-li-2 {
+    background-color: #e09aa7;
+}
+
+.build-li-3 {
+    background-color: #bb7987;
 }
