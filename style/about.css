@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/* state-------------------------------------------------------------------------- */
+
+.state {
+    background-color: #fff;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-top: 5rem;
+}
+
+.state-head {
+    text-align: center;
+}
+
+.state-body, .state-foot {
+    margin-top: 3rem;
+}
+
+.state-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.state-desc {
+    margin-top: 1rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+.state-ul {
+    display: flex;
+    justify-content: center;
+}
+
+.state-number, .state-unit, .state-term, .state-tips {
+    display: block;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.state-li {
+    text-align: center;
+}
+
+.state-li + .state-li {
+    border-left: solid 1px rgba(0, 0, 0, .1);
+}
+
+.state-img {
+    width: 100%;
+    height: auto;
+}
+
+.state-number, .state-unit, .state-term {
+    font-weight: 600;
+}
+
+.state-unit, .state-term {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.state-number {
+    font-size: 5rem;
+}
+
+.state-unit {
+    font-size: 1.5rem;
+}
+
+.state-term {
+    font-size: 2rem;
+}
+
+.state-tips {
+    color: rgba(0, 0, 0, .7);
+}
+
+.state-number, .state-unit, .state-term {
+    color: #3eb5fe;
+}
+
+.state-li:nth-child(even) .state-number,
+.state-li:nth-child(even) .state-unit,
+.state-li:nth-child(even) .state-term {
+    color: #33d8ab;
+}
+
+
+/* env---------------------------------------------------------------------- */
+
+.env {
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    gap: 2rem;
+}
+
+.env-head {
+    width: 33.3333%;
+}
+
+.env-body {
+    width: 66.6666%;
+}
+
+.env-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.env-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.env-desc {
+    margin-top: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    color: rgba(0, 0, 0, .7);
+}
